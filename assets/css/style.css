@@ -1,67 +1,86 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,900");
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .floatWindow {
-   position: absolute;
-   top:0;
-   left: 0; 
-   background: rgba(255, 255, 255, 0.5);
-   width: 20%;
-   border-radius: 5px;
-   padding: 2px 3px 2px 3px;
-   box-sizing: border-box;
-   animation: box 40s ease-in-out forwards;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+    width: 20%;
+    border-radius: 5px;
+    padding: 2px 3px 2px 3px;
+    box-sizing: border-box;
+    animation: box 40s ease-in-out forwards;
 }
+
 @keyframes box {
- 0%  {opacity: 1;}
- 25% { left: 80%; top: 0;}
- 50% { left: 80%; top: calc(100% - 26px);}
- 75% { left: 0; top: calc(100% - 26px);}
- 100% { left: 0; top: 0; opacity: 0;}
-}
-.header {
-  padding: 0 50px; }
-
-  .header__section {
-    display: flex;
-    flex-flow: column wrap;
-    padding: 22px 0 27px;
-    box-sizing: border-box; 
-    justify-content: center;
-
-  }
-    .header__logo {
-      display: flex;
-      justify-content: center;
-      align-items:center;
-      margin:3rem 0 3rem 0;
+    0% {
+        opacity: 1;
     }
-      .header__logo  .logotype {
-              width: 200px;
-              position: absolute;
-              z-index: 1;
-            }
-       .header__logo  .wing_l {
-              width: 200px;
-              padding-right: 1.8em;
-            }
-      .header__logo .wing_r {
-              width: 200px;
-              padding-left: 1.8em;
-            }
+    25% {
+        left: 80%;
+        top: 0;
+    }
+    50% {
+        left: 80%;
+        top: calc(100% - 26px);
+    }
+    75% {
+        left: 0;
+        top: calc(100% - 26px);
+    }
+    100% {
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+}
 
-    .header__info {
-      font-size: 1.9rem;
-      text-align: center;
-       }
+.header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.header__logo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.header__logo .logotype {
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__logo .wing_l {
+    width: 200px;
+    padding-right: 1.8em;
+}
+
+.header__logo .wing_r {
+    width: 200px;
+    padding-left: 1.8em;
+}
+
+.header__info {
+    font-size: 1.9rem;
+    text-align: center;
+}
 
 .content {
   width: 100%;
   margin: 0 auto;
   padding: 0 110px 130px;
-  box-sizing: border-box; }
+  }
 
   a, a:visited { 
   color: #2e6c8e;
